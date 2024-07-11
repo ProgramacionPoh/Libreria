@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/formulario.css">
+  </head>
+  <body>
+    
+    <header>
+      <h1 class="text-center my-5">Trabajo Práctico JS</h1>
+    </header>
+
+    <main class="text-center">
+      <section>
+
+        <form>
+          <div id="campos">
+            <input class="my-1 rounded-3" type="text" name="nombre" id="nombre" placeholder="Nombre"><br>
+            <input class="my-1 rounded-3" type="text" name="apellido" id="apellido" placeholder="Apellido"><br>
+            <input class="my-1 rounded-3" type="email" name="mail" id="mail" placeholder="Email"><br>
+            <input class="my-1 rounded-3" type="password" name="psw" id="psw" placeholder="Password"><br>
+            <input class="my-1 rounded-3" type="date" name="fechaNac" id="fechaNac" placeholder="Fecha"><br>
+            <select name="" id="">
+              <option value="arg">Argentina</option>
+            </select>
+          </div>
+
+          <input class="my-3" type="checkbox" name="check" id="check">
+          <label for="check">Acepto términos y condiciones</label>
+          <br>
+          <button class="btn btn-danger" type="button">Enviar</button><br>
+          <a href="#">
+            <small>Necesitas ayuda?</small>
+          </a>
+
+        </form>
+
+      </section>
+
+      <section id="resultados">
+
+
+
+      </section>
+
+      <div id="elementoUno" style="color: aliceblue;" class="ejemplo">Elemento 1</div>
+      <div style="color: aliceblue;" class="ejemplo">Elemento 2</div>
+
+      <button type="button" onclick="mostrarElementos()">ElementsClassName</button>
+
+      <button type="button" onclick="querySel()">Query Selector</button>
+
+      
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/formulario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

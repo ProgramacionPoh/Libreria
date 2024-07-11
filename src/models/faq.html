@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../styles/faq.css">
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="../../index.html"><img src="/src/images/logo.png" alt="logo" class="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../../index.html"><i class="bi bi-house-door"></i> Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./favoritos.html"><i class="bi bi-star-fill"></i> Favoritos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Acerca.html"><i class="bi bi-emoji-wink"></i> Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./faq.html"><i class="bi bi-question-circle"></i> Faq</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contacto.html"><i class="bi bi-envelope-at-fill"></i> Contacto</a>
+        </li>
+      </ul>
+    </div>
+    <div class="ml-auto">
+      <button class="btn btn-primary login-btn" onclick="window.location.href='./Loggin.html';">Iniciar Sesión</button>
+    </div>
+  </div>
+</nav>
+  <body>
+    <div class="container mt-5">
+  <section>
+    <h2>Preguntas Frecuentes</h2>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            <i class="bi bi-credit-card"></i>
+            <span class="px-3">Formas de pago</span> 
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            <strong>Trabajamos con las siguientes modalidades de pago:</strong>
+            <ul class="faq" id="faq">
+              <li>Mercado Pago</li>
+              <li>Tarjetas de Crédito y Débito</li>
+              <li>Transferencia</li>
+              <li>Efectivo</li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            <i class="bi bi-truck"></i>
+            <span class="px-3">Costo de envío</span> 
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body">
+            <p><strong>Contamos con servicio de mensajeria para envíos en AMBA y Correo Argentino para todo el país.</strong><br> El costo de envío será mostrado en base al total de la compra y ubicación, en el checkout, en el momento previo a la compra.</p>
+            <strong>¿Cuánto tarda en llegar el pedido?</strong><br> Una vez procesada y confirmada la compra, el envío se realiza en las siguientes 24 hs. Si la compra se realiza un viernes, sábado o domingo, el envío se genera a partir del lunes.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            <i class="bi bi-bag"></i>
+            <span class="px-3">Seguí tu pedido</span>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            <p><strong>¿Ya compraste?</strong> <br>Consultá el estado de tu compra sólo con tu DNI y código del pedido.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            <i class="bi bi-arrow-return-left"></i>
+            <span class="px-3">Cambios y devoluciones</span>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+          <div class="accordion-body">
+            <p><strong>¿Cuál es el plazo para realizar un cambio?</strong> <br>Puedes solicitar un cambio hasta 15 días luego de realizada la compra.</p>
+            <p><strong>¿Qué debo hacer si el producto no llega en buen estado?</strong><br> Comunícate con nosotros a ventas@refugiodellibro.com.ar</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+
+<footer class="footer bg-dark text-white text-center py-4">
+  <div class="container">
+    <span class="text-muted">© 2024 Refugio de Libros. Todos los derechos reservados.</span>
+  </div>
+
+  <div class="whapp">
+   <a href="https://api.whatsapp.com/send?phone=549116064614&text=Hola quiero informacion del sitio" target="_blank"><img src="../images/whatsapp-logo-transparent-free-png.webp" style="width: 50px; height: 50px;">  
+  </div> 
+</footer>
+</html>

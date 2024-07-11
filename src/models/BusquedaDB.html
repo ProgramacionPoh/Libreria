@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscar Libros</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Buscar Libros</h1>
+        <div class="input-group mb-3">
+            <input type="text" id="inputBuscar" class="form-control" placeholder="Ingrese término de búsqueda">
+            <div class="input-group-append">
+                <button class="btn btn-outline-primary" type="button" onclick="buscarLibros()">Buscar</button>
+            </div>
+        </div>
+        <div id="resultadoBusqueda">
+            <!-- Aquí se mostrarán los resultados de la búsqueda -->
+        </div>
+    </div>
+
+    <script>
+        function buscarLibros() {
+            const input = document.getElementById('inputBuscar').value;
+            const url = `http://localhost:8080/libros/buscar`;
+
+            fetch(url)
+            .then(response => response.json())
+            .then(libros => {
+            mostrarResultados(libros);
+        })
+        .catch(error => console.error('Error al buscar libros:', error));
+    }
+
+
+    function mostrarResultados(libros) {
+    const resultadoBusqueda = document.getElementById('resultadoBusqueda');
+    resultadoBusqueda.innerHTML = '';
+
+    if (libros.id_libro !== undefined) {
+        // Si la respuesta es un solo objeto libro
+        resultadoBusqueda.innerHTML += `<p>${libros.nombre}</p>`;
+    } else if (Array.isArray(libros) && libros.length > 0) {
+        // Si la respuesta es un array de libros
+        libros.forEach(libro => {
+            resultadoBusqueda.innerHTML += `<p>${libro.nombre}</p>`;
+        });
+    } else {
+        // Si la respuesta está vacía o en otro formato no esperado
+        resultadoBusqueda.innerHTML = '<p>No se encontraron resultados</p>';
+    }
+}
+    </script>
+</body>
+</html>
