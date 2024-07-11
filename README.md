@@ -32,7 +32,7 @@ Los usuarios pueden buscar libros por título, autor, categoría o palabras clav
 
 ## Instalación
 
-Este proyecto no requiere instalación local, ya que es una aplicación web. 
+Este proyecto necesita Java 21, Spring 3.1 y Vsc. 
 Puedes acceder a Refugio de Libros directamente desde tu navegador web en la siguiente URL: [Refugio de Libros](https://codo-a-codo-java-grupo5.vercel.app/).
 
 ## Contribución
