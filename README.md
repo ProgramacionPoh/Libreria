@@ -1,4 +1,4 @@
-# Codo_a_Codo_Java_Grupo5-Refugio de Libros
+Refugio de Libros
 
 Bienvenido a Refugio de Libros, tu compañero de confianza en el viaje literario. 
 Nuestra página está dedicada a ayudarte a descubrir el próximo bestseller, un clásico perdurable o un tesoro oculto. 
