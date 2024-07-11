@@ -24,7 +24,11 @@ Los usuarios pueden buscar libros por título, autor, categoría o palabras clav
 - JavaScript
 - HTML
 - CSS
+- Bootstrap
 - Google Books API
+- Java
+- SpringWeb
+- MySql
 
 ## Instalación
 
